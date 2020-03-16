@@ -1,0 +1,850 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B329730241E98220075CF3E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B32972F241E98220075CF3E /* AppDelegate.swift */; };
+		5B329739241E984E0075CF3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B329738241E984E0075CF3E /* Assets.xcassets */; };
+		5B32973C241E984E0075CF3E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B32973A241E984E0075CF3E /* LaunchScreen.storyboard */; };
+		5BC27A10241E9F6400E28938 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 5BC27A0F241E9F6400E28938 /* Swinject */; };
+		5BC27A13241E9F8F00E28938 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5BC27A12241E9F8F00E28938 /* SnapKit */; };
+		5BC27A41241ECC8400E28938 /* Correio_EleganteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A40241ECC8400E28938 /* Correio_EleganteTests.swift */; };
+		5BC27A4F241ECC8D00E28938 /* Correio_EleganteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A4E241ECC8D00E28938 /* Correio_EleganteUITests.swift */; };
+		5BC27A5F241EEBB500E28938 /* RIBs.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A5D241EEAFC00E28938 /* RIBs.framework */; };
+		5BC27A60241EEBB500E28938 /* RIBs.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A5D241EEAFC00E28938 /* RIBs.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BC27A64241EECB700E28938 /* AppComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A63241EECB700E28938 /* AppComponent.swift */; };
+		5BC27A67241EED4600E28938 /* RootBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A66241EED4600E28938 /* RootBuilder.swift */; };
+		5BC27A6D241EEE8400E28938 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A6C241EEE8400E28938 /* RootViewController.swift */; };
+		5BC27A6F241EEF7500E28938 /* RootInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A6E241EEF7500E28938 /* RootInteractor.swift */; };
+		5BC27A71241EEFA700E28938 /* RootRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A70241EEFA700E28938 /* RootRouter.swift */; };
+		5BC27A73241EEFE400E28938 /* RootComponent+LoggedOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A72241EEFE400E28938 /* RootComponent+LoggedOut.swift */; };
+		5BC27A76241EF04500E28938 /* LoggedOutBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27A75241EF04500E28938 /* LoggedOutBuilder.swift */; };
+		5BC27A98241EF61900E28938 /* RxAtomic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A79241EF2AE00E28938 /* RxAtomic.framework */; };
+		5BC27A99241EF61900E28938 /* RxAtomic.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A79241EF2AE00E28938 /* RxAtomic.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BC27A9A241EF62400E28938 /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A7D241EF2DB00E28938 /* RxBlocking.framework */; };
+		5BC27A9B241EF62400E28938 /* RxBlocking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A7D241EF2DB00E28938 /* RxBlocking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BC27A9C241EF63A00E28938 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A7B241EF2CA00E28938 /* RxCocoa.framework */; };
+		5BC27A9D241EF63A00E28938 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A7B241EF2CA00E28938 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BC27A9E241EF64700E28938 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A77241EF25C00E28938 /* RxSwift.framework */; };
+		5BC27A9F241EF64700E28938 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC27A77241EF25C00E28938 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5BC27AA1241F017B00E28938 /* RootComponent+LoggedIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AA0241F017B00E28938 /* RootComponent+LoggedIn.swift */; };
+		5BC27AA4241F02A000E28938 /* DELETE_ME.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AA3241F02A000E28938 /* DELETE_ME.swift */; };
+		5BC27AA6241F02C200E28938 /* LoggedInComponent+OffGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AA5241F02C200E28938 /* LoggedInComponent+OffGame.swift */; };
+		5BC27AA8241F030900E28938 /* LoggedInComponent+TicTacToe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AA7241F030900E28938 /* LoggedInComponent+TicTacToe.swift */; };
+		5BC27AAB241F047000E28938 /* TicTacToeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AAA241F047000E28938 /* TicTacToeBuilder.swift */; };
+		5BC27AAD241F049600E28938 /* TicTacToeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AAC241F049600E28938 /* TicTacToeInteractor.swift */; };
+		5BC27AAF241F04C200E28938 /* TicTacToeRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AAE241F04C200E28938 /* TicTacToeRouter.swift */; };
+		5BC27AB1241F060F00E28938 /* TicTacToeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BC27AB0241F060F00E28938 /* TicTacToeViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5BC27A43241ECC8400E28938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B329724241E98220075CF3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B32972B241E98220075CF3E;
+			remoteInfo = "Correio Elegante";
+		};
+		5BC27A51241ECC8D00E28938 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5B329724241E98220075CF3E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5B32972B241E98220075CF3E;
+			remoteInfo = "Correio Elegante";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5BC27A61241EEBB500E28938 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5BC27A9F241EF64700E28938 /* RxSwift.framework in Embed Frameworks */,
+				5BC27A9D241EF63A00E28938 /* RxCocoa.framework in Embed Frameworks */,
+				5BC27A60241EEBB500E28938 /* RIBs.framework in Embed Frameworks */,
+				5BC27A99241EF61900E28938 /* RxAtomic.framework in Embed Frameworks */,
+				5BC27A9B241EF62400E28938 /* RxBlocking.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5B32972C241E98220075CF3E /* Correio Elegante.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Correio Elegante.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B32972F241E98220075CF3E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5B329738241E984E0075CF3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5B32973B241E984E0075CF3E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5B32973D241E984E0075CF3E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC27A3E241ECC8400E28938 /* Correio EleganteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Correio EleganteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC27A40241ECC8400E28938 /* Correio_EleganteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Correio_EleganteTests.swift; sourceTree = "<group>"; };
+		5BC27A42241ECC8400E28938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC27A4C241ECC8D00E28938 /* Correio EleganteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Correio EleganteUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BC27A4E241ECC8D00E28938 /* Correio_EleganteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Correio_EleganteUITests.swift; sourceTree = "<group>"; };
+		5BC27A50241ECC8D00E28938 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BC27A5D241EEAFC00E28938 /* RIBs.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RIBs.framework; path = Carthage/Build/iOS/RIBs.framework; sourceTree = "<group>"; };
+		5BC27A63241EECB700E28938 /* AppComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppComponent.swift; sourceTree = "<group>"; };
+		5BC27A66241EED4600E28938 /* RootBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootBuilder.swift; sourceTree = "<group>"; };
+		5BC27A6C241EEE8400E28938 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		5BC27A6E241EEF7500E28938 /* RootInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootInteractor.swift; sourceTree = "<group>"; };
+		5BC27A70241EEFA700E28938 /* RootRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootRouter.swift; sourceTree = "<group>"; };
+		5BC27A72241EEFE400E28938 /* RootComponent+LoggedOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedOut.swift"; sourceTree = "<group>"; };
+		5BC27A75241EF04500E28938 /* LoggedOutBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggedOutBuilder.swift; sourceTree = "<group>"; };
+		5BC27A77241EF25C00E28938 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		5BC27A79241EF2AE00E28938 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		5BC27A7B241EF2CA00E28938 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		5BC27A7D241EF2DB00E28938 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		5BC27A7F241EF30900E28938 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		5BC27A8B241EF54800E28938 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		5BC27AA0241F017B00E28938 /* RootComponent+LoggedIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RootComponent+LoggedIn.swift"; sourceTree = "<group>"; };
+		5BC27AA3241F02A000E28938 /* DELETE_ME.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DELETE_ME.swift; sourceTree = "<group>"; };
+		5BC27AA5241F02C200E28938 /* LoggedInComponent+OffGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+OffGame.swift"; sourceTree = "<group>"; };
+		5BC27AA7241F030900E28938 /* LoggedInComponent+TicTacToe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "LoggedInComponent+TicTacToe.swift"; sourceTree = "<group>"; };
+		5BC27AAA241F047000E28938 /* TicTacToeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeBuilder.swift; sourceTree = "<group>"; };
+		5BC27AAC241F049600E28938 /* TicTacToeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeInteractor.swift; sourceTree = "<group>"; };
+		5BC27AAE241F04C200E28938 /* TicTacToeRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeRouter.swift; sourceTree = "<group>"; };
+		5BC27AB0241F060F00E28938 /* TicTacToeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicTacToeViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5B329729241E98220075CF3E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC27A9C241EF63A00E28938 /* RxCocoa.framework in Frameworks */,
+				5BC27A5F241EEBB500E28938 /* RIBs.framework in Frameworks */,
+				5BC27A9E241EF64700E28938 /* RxSwift.framework in Frameworks */,
+				5BC27A9A241EF62400E28938 /* RxBlocking.framework in Frameworks */,
+				5BC27A98241EF61900E28938 /* RxAtomic.framework in Frameworks */,
+				5BC27A10241E9F6400E28938 /* Swinject in Frameworks */,
+				5BC27A13241E9F8F00E28938 /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC27A3B241ECC8400E28938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC27A49241ECC8D00E28938 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B329723241E98220075CF3E = {
+			isa = PBXGroup;
+			children = (
+				5B32972E241E98220075CF3E /* Correio Elegante */,
+				5BC27A3F241ECC8400E28938 /* Correio EleganteTests */,
+				5BC27A4D241ECC8D00E28938 /* Correio EleganteUITests */,
+				5B32972D241E98220075CF3E /* Products */,
+				5BC27A5C241EEAFC00E28938 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5B32972D241E98220075CF3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5B32972C241E98220075CF3E /* Correio Elegante.app */,
+				5BC27A3E241ECC8400E28938 /* Correio EleganteTests.xctest */,
+				5BC27A4C241ECC8D00E28938 /* Correio EleganteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5B32972E241E98220075CF3E /* Correio Elegante */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27AA9241F044900E28938 /* TicTacToe */,
+				5BC27AA2241F01C600E28938 /* LoggedIn */,
+				5BC27A74241EF02B00E28938 /* LoggedOut */,
+				5BC27A65241EED1B00E28938 /* Root */,
+				5BC27A62241EEC9400E28938 /* Config */,
+				5B329738241E984E0075CF3E /* Assets.xcassets */,
+				5B32973A241E984E0075CF3E /* LaunchScreen.storyboard */,
+				5B32973D241E984E0075CF3E /* Info.plist */,
+			);
+			path = "Correio Elegante";
+			sourceTree = "<group>";
+		};
+		5BC27A3F241ECC8400E28938 /* Correio EleganteTests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A40241ECC8400E28938 /* Correio_EleganteTests.swift */,
+				5BC27A42241ECC8400E28938 /* Info.plist */,
+			);
+			path = "Correio EleganteTests";
+			sourceTree = "<group>";
+		};
+		5BC27A4D241ECC8D00E28938 /* Correio EleganteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A4E241ECC8D00E28938 /* Correio_EleganteUITests.swift */,
+				5BC27A50241ECC8D00E28938 /* Info.plist */,
+			);
+			path = "Correio EleganteUITests";
+			sourceTree = "<group>";
+		};
+		5BC27A5C241EEAFC00E28938 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A8B241EF54800E28938 /* XCTest.framework */,
+				5BC27A7F241EF30900E28938 /* RxTest.framework */,
+				5BC27A7D241EF2DB00E28938 /* RxBlocking.framework */,
+				5BC27A7B241EF2CA00E28938 /* RxCocoa.framework */,
+				5BC27A79241EF2AE00E28938 /* RxAtomic.framework */,
+				5BC27A77241EF25C00E28938 /* RxSwift.framework */,
+				5BC27A5D241EEAFC00E28938 /* RIBs.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BC27A62241EEC9400E28938 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				5B32972F241E98220075CF3E /* AppDelegate.swift */,
+				5BC27A63241EECB700E28938 /* AppComponent.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		5BC27A65241EED1B00E28938 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A6B241EEE3C00E28938 /* Controller */,
+				5BC27A6A241EEDFA00E28938 /* Router */,
+				5BC27A69241EEDEB00E28938 /* Interactor */,
+				5BC27A68241EEDD900E28938 /* Presenter */,
+				5BC27A66241EED4600E28938 /* RootBuilder.swift */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		5BC27A68241EEDD900E28938 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A72241EEFE400E28938 /* RootComponent+LoggedOut.swift */,
+				5BC27AA0241F017B00E28938 /* RootComponent+LoggedIn.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		5BC27A69241EEDEB00E28938 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A6E241EEF7500E28938 /* RootInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BC27A6A241EEDFA00E28938 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A70241EEFA700E28938 /* RootRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		5BC27A6B241EEE3C00E28938 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A6C241EEE8400E28938 /* RootViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BC27A74241EF02B00E28938 /* LoggedOut */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27A75241EF04500E28938 /* LoggedOutBuilder.swift */,
+			);
+			path = LoggedOut;
+			sourceTree = "<group>";
+		};
+		5BC27AA2241F01C600E28938 /* LoggedIn */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27AA3241F02A000E28938 /* DELETE_ME.swift */,
+				5BC27AA5241F02C200E28938 /* LoggedInComponent+OffGame.swift */,
+				5BC27AA7241F030900E28938 /* LoggedInComponent+TicTacToe.swift */,
+			);
+			path = LoggedIn;
+			sourceTree = "<group>";
+		};
+		5BC27AA9241F044900E28938 /* TicTacToe */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27AB4241F94BD00E28938 /* Router */,
+				5BC27AB3241F94B300E28938 /* Interactor */,
+				5BC27AB2241F94A800E28938 /* Controller */,
+				5BC27AAA241F047000E28938 /* TicTacToeBuilder.swift */,
+			);
+			path = TicTacToe;
+			sourceTree = "<group>";
+		};
+		5BC27AB2241F94A800E28938 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27AB0241F060F00E28938 /* TicTacToeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5BC27AB3241F94B300E28938 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27AAC241F049600E28938 /* TicTacToeInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		5BC27AB4241F94BD00E28938 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				5BC27AAE241F04C200E28938 /* TicTacToeRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5B32972B241E98220075CF3E /* Correio Elegante */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5B329740241E984E0075CF3E /* Build configuration list for PBXNativeTarget "Correio Elegante" */;
+			buildPhases = (
+				5B329728241E98220075CF3E /* Sources */,
+				5B329729241E98220075CF3E /* Frameworks */,
+				5B32972A241E98220075CF3E /* Resources */,
+				5BC27A61241EEBB500E28938 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Correio Elegante";
+			packageProductDependencies = (
+				5BC27A0F241E9F6400E28938 /* Swinject */,
+				5BC27A12241E9F8F00E28938 /* SnapKit */,
+			);
+			productName = "Correio Elegante";
+			productReference = 5B32972C241E98220075CF3E /* Correio Elegante.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5BC27A3D241ECC8400E28938 /* Correio EleganteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC27A45241ECC8400E28938 /* Build configuration list for PBXNativeTarget "Correio EleganteTests" */;
+			buildPhases = (
+				5BC27A3A241ECC8400E28938 /* Sources */,
+				5BC27A3B241ECC8400E28938 /* Frameworks */,
+				5BC27A3C241ECC8400E28938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC27A44241ECC8400E28938 /* PBXTargetDependency */,
+			);
+			name = "Correio EleganteTests";
+			productName = "Correio EleganteTests";
+			productReference = 5BC27A3E241ECC8400E28938 /* Correio EleganteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5BC27A4B241ECC8D00E28938 /* Correio EleganteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BC27A53241ECC8D00E28938 /* Build configuration list for PBXNativeTarget "Correio EleganteUITests" */;
+			buildPhases = (
+				5BC27A48241ECC8D00E28938 /* Sources */,
+				5BC27A49241ECC8D00E28938 /* Frameworks */,
+				5BC27A4A241ECC8D00E28938 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5BC27A52241ECC8D00E28938 /* PBXTargetDependency */,
+			);
+			name = "Correio EleganteUITests";
+			productName = "Correio EleganteUITests";
+			productReference = 5BC27A4C241ECC8D00E28938 /* Correio EleganteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5B329724241E98220075CF3E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Rodrigo Santos";
+				TargetAttributes = {
+					5B32972B241E98220075CF3E = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					5BC27A3D241ECC8400E28938 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5B32972B241E98220075CF3E;
+					};
+					5BC27A4B241ECC8D00E28938 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = 5B32972B241E98220075CF3E;
+					};
+				};
+			};
+			buildConfigurationList = 5B329727241E98220075CF3E /* Build configuration list for PBXProject "Correio Elegante" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5B329723241E98220075CF3E;
+			packageReferences = (
+				5BC27A0E241E9F6400E28938 /* XCRemoteSwiftPackageReference "Swinject" */,
+				5BC27A11241E9F8F00E28938 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				5BC27A22241EBC8F00E28938 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
+			productRefGroup = 5B32972D241E98220075CF3E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5B32972B241E98220075CF3E /* Correio Elegante */,
+				5BC27A3D241ECC8400E28938 /* Correio EleganteTests */,
+				5BC27A4B241ECC8D00E28938 /* Correio EleganteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5B32972A241E98220075CF3E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B32973C241E984E0075CF3E /* LaunchScreen.storyboard in Resources */,
+				5B329739241E984E0075CF3E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC27A3C241ECC8400E28938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC27A4A241ECC8D00E28938 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5B329728241E98220075CF3E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC27AAD241F049600E28938 /* TicTacToeInteractor.swift in Sources */,
+				5BC27AAF241F04C200E28938 /* TicTacToeRouter.swift in Sources */,
+				5BC27A6D241EEE8400E28938 /* RootViewController.swift in Sources */,
+				5BC27AB1241F060F00E28938 /* TicTacToeViewController.swift in Sources */,
+				5B329730241E98220075CF3E /* AppDelegate.swift in Sources */,
+				5BC27A6F241EEF7500E28938 /* RootInteractor.swift in Sources */,
+				5BC27AA8241F030900E28938 /* LoggedInComponent+TicTacToe.swift in Sources */,
+				5BC27AA1241F017B00E28938 /* RootComponent+LoggedIn.swift in Sources */,
+				5BC27A73241EEFE400E28938 /* RootComponent+LoggedOut.swift in Sources */,
+				5BC27AA6241F02C200E28938 /* LoggedInComponent+OffGame.swift in Sources */,
+				5BC27A71241EEFA700E28938 /* RootRouter.swift in Sources */,
+				5BC27A64241EECB700E28938 /* AppComponent.swift in Sources */,
+				5BC27A67241EED4600E28938 /* RootBuilder.swift in Sources */,
+				5BC27AA4241F02A000E28938 /* DELETE_ME.swift in Sources */,
+				5BC27AAB241F047000E28938 /* TicTacToeBuilder.swift in Sources */,
+				5BC27A76241EF04500E28938 /* LoggedOutBuilder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC27A3A241ECC8400E28938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC27A41241ECC8400E28938 /* Correio_EleganteTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BC27A48241ECC8D00E28938 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BC27A4F241ECC8D00E28938 /* Correio_EleganteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5BC27A44241ECC8400E28938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B32972B241E98220075CF3E /* Correio Elegante */;
+			targetProxy = 5BC27A43241ECC8400E28938 /* PBXContainerItemProxy */;
+		};
+		5BC27A52241ECC8D00E28938 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5B32972B241E98220075CF3E /* Correio Elegante */;
+			targetProxy = 5BC27A51241ECC8D00E28938 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5B32973A241E984E0075CF3E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5B32973B241E984E0075CF3E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5B32973E241E984E0075CF3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5B32973F241E984E0075CF3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5B329741241E984E0075CF3E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42V6W967K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Correio Elegante/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigo.Correio-Elegante";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5B329742241E984E0075CF3E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42V6W967K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Correio Elegante/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigo.Correio-Elegante";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5BC27A46241ECC8400E28938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42V6W967K;
+				INFOPLIST_FILE = "Correio EleganteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigo.Correio-EleganteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Correio Elegante.app/Correio Elegante";
+			};
+			name = Debug;
+		};
+		5BC27A47241ECC8400E28938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42V6W967K;
+				INFOPLIST_FILE = "Correio EleganteTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigo.Correio-EleganteTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Correio Elegante.app/Correio Elegante";
+			};
+			name = Release;
+		};
+		5BC27A54241ECC8D00E28938 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42V6W967K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Correio EleganteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigo.Correio-EleganteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Correio Elegante";
+			};
+			name = Debug;
+		};
+		5BC27A55241ECC8D00E28938 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = Z42V6W967K;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = "Correio EleganteUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.rodrigo.Correio-EleganteUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Correio Elegante";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5B329727241E98220075CF3E /* Build configuration list for PBXProject "Correio Elegante" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B32973E241E984E0075CF3E /* Debug */,
+				5B32973F241E984E0075CF3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5B329740241E984E0075CF3E /* Build configuration list for PBXNativeTarget "Correio Elegante" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B329741241E984E0075CF3E /* Debug */,
+				5B329742241E984E0075CF3E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC27A45241ECC8400E28938 /* Build configuration list for PBXNativeTarget "Correio EleganteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC27A46241ECC8400E28938 /* Debug */,
+				5BC27A47241ECC8400E28938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BC27A53241ECC8D00E28938 /* Build configuration list for PBXNativeTarget "Correio EleganteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BC27A54241ECC8D00E28938 /* Debug */,
+				5BC27A55241ECC8D00E28938 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5BC27A0E241E9F6400E28938 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.7.1;
+			};
+		};
+		5BC27A11241E9F8F00E28938 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+		5BC27A22241EBC8F00E28938 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5BC27A0F241E9F6400E28938 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BC27A0E241E9F6400E28938 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+		5BC27A12241E9F8F00E28938 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5BC27A11241E9F8F00E28938 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5B329724241E98220075CF3E /* Project object */;
+}
